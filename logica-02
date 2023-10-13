@@ -1,7 +1,12 @@
 
 let celcius=parseFloat(prompt("Ingrese la temperatura en grados celcius"));
+if(isNaN(celcius)){
+    console.log("El valor ingresado no es un numero");
+}
+else{
 let farenheit=celcius*1.8+32;
 let kelvin = celcius+273.15;
 console.log("La temperatura en grados celcius es: "+celcius);
 console.log("La temperatura en grados farenheit es: "+farenheit);
 console.log("La temperatura en grados kelvin es: "+kelvin);
+}
